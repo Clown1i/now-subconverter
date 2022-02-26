@@ -166,7 +166,7 @@ jobs:
       with:
         author_name: GitHub Action
         author_email: noreply@github.com
-        message: ${{ github.event.inputs.message }}
+        message: ${{ env.message }}
         add: "-A"
       env:
         token: ${{ secrets.GITHUB_TOKEN }}

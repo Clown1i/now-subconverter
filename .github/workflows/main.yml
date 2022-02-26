@@ -29,7 +29,7 @@ on:
     inputs:
       message:
         description: 'commit message'
-        required: true
+        required: false
         default: 'Update subconverter'
       branch:
         description: 'update subconverter from where?(action/build/release)'
@@ -51,7 +51,7 @@ concurrency:
 
 jobs:
   Build:
-    name: Build and Update
+    name: Fetch and Update
     runs-on: ubuntu-latest
     steps:
     - name: Checkout

@@ -10,13 +10,8 @@
         },
         {
             "src": "subconverter/subconverter",
-            "use": "now-static-bin",
-            "config": {
-                "port": 25500,
-                "includeFiles": [
-                    "subconverter/**"
-                ]
-            }
+            "use": "now-static-bin"
+
         }
     ],
     "routes": [
